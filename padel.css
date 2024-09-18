@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-image: url("Fotos/Cancha\ de\ padel.jpg");
+    background-size: 100%;
+
+}
+
+
+.subt {
+    text-decoration: none;
+    background-color: bisque;
+    color: black;
+    text-align: right;
+    position: relative;
+    right: -1250px;
+    font-size: 3em;
+}
+
+.subt:hover {
+    background-color: rgb(222, 178, 178);
+
+}
+
+#logo {
+    width: 5%;
+}
+
+#Logo_filtro {
+    width: 3%;
+}
+
+#Logo_casa {
+    width: 3%;
+}
+
+#whats {
+    width: 7%;
+}
+
+#insta {
+    width: 7%;
+}
+
+#mail {
+    width: 7%;
+}
+
+.pics {
+    width: 25%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(79, 138, 178);
+    position: relative;
+    top: 500px;
+
+
+}
+
+header {
+    h1 {
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 3em;
+    }
+
+    background-color: rgb(79, 138, 178);
+
+}
