@@ -3,7 +3,6 @@
 body {
     background-image: url("Fotos/Cancha\ de\ padel.jpg");
     background-size: 100%;
-
 }
 
 
@@ -24,6 +23,9 @@ body {
 
 #logo {
     width: 5%;
+    position: relative;
+    top: 50px;
+    left: 20px;
 }
 
 #Logo_filtro {
@@ -52,7 +54,7 @@ body {
 
 footer {
     text-align: center;
-    background-color: rgb(79, 138, 178);
+    background-color: rgb(38, 121, 176);
     position: relative;
     top: 500px;
 
@@ -69,6 +71,18 @@ header {
         font-size: 3em;
     }
 
-    background-color: rgb(79, 138, 178);
+    background-color: rgb(38, 121, 176);
 
+}
+
+.superior {
+    text-align: center;
+}
+
+.media {
+    text-align: center;
+}
+
+.inferior {
+    text-align: center;
 }
