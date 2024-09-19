@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-body{
-    margin: 0;
+body {
     background-image: url("Fotos/Cancha\ de\ padel.jpg");
     background-size: 100%;
+    margin: 0;
+
 }
 
-
-.navPrincipal{
+.principalNav {
     margin: 20px 20px 20px 60%;
 }
-.navPrincipal p{
+
+.principalNav p {
     text-align: center;
-    margin: 30px;
     background-color: bisque;
-    padding: 20px;
-}
-.subt {
-    text-decoration: none;
-    color: black;
-    font-size: 3em;
+    padding: 30px;
+    margin: 20px;
 }
 
-.navPrincipal p:hover {
+.subt {
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+}
+
+.principalNav p:hover {
     background-color: rgb(222, 178, 178);
 
 }
@@ -30,7 +32,7 @@ body{
 #logo {
     width: 5%;
     position: relative;
-    top: 50px;
+    top: 30px;
     left: 20px;
 }
 
@@ -43,15 +45,15 @@ body{
 }
 
 #whats {
-    width: 7%;
+    width: 5%;
 }
 
 #insta {
-    width: 7%;
+    width: 5%;
 }
 
 #mail {
-    width: 7%;
+    width: 5%;
 }
 
 .pics {
@@ -60,21 +62,26 @@ body{
 
 footer {
     text-align: center;
-    background-color: rgba(38, 121, 176, 0.359);
+    background-color: rgba(45, 107, 148, 0.547);
     position: fixed;
     bottom: 0;
+
+
+
+
 }
 
 header {
     background-color: rgb(38, 121, 176);
-    height: 80px;
-}
-h1 {
-    text-align: center;
-    color: black;
-    font-family: "Oswald", sans-serif;
-    font-size: 3em;
-    margin-top: -60px;
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 3em;
+        margin-top: -30px;
+    }
+
 }
 
 .superior {
@@ -86,5 +93,13 @@ h1 {
 }
 
 .inferior {
+    text-align: center;
+}
+
+.pelotas {
+    text-align: center;
+}
+
+.palas {
     text-align: center;
 }
