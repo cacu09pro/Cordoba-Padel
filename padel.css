@@ -15,7 +15,7 @@ body {
     background-color: rgb(217, 217, 217);
     padding: 30px;
     margin: 20px;
-    margin-top: 17.5%;
+    margin-top: 7.5%;
 }
 
 .subt {
@@ -51,15 +51,17 @@ body {
     text-align: center;
     margin: 2%;
 }
-#uno{
+
+#uno {
     margin-left: 25%;
 }
-#dos{
-    height: 270px;
+
+#dos {
+    height: 320px;
 }
 
 header {
-    background-color:rgb(114, 132, 166);
+    background-color: rgb(114, 132, 166);
 
     h1 {
         text-align: center;
@@ -79,8 +81,20 @@ header {
     text-align: center;
 }
 
+#lonpa {
+    width: 7.5%;
+}
+
 .inferior {
     text-align: center;
+}
+
+#zapa {
+    width: 12.5%;
+}
+
+#zapa2 {
+    width: 15%;
 }
 
 .pelotas {
@@ -90,14 +104,16 @@ header {
 .palas {
     text-align: center;
 }
+
 footer {
     text-align: center;
     background-color: rgb(114, 132, 166, 0.547);
     position: fixed;
     bottom: 0;
 }
+
 #whats {
-    width: 5%;   
+    width: 5%;
     filter: contrast(100%);
     margin-bottom: 0.25%;
     margin-right: 3%;
