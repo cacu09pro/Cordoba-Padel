@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title> Torneos </title>
     <link href="padel.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Fotos/Logoweb.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <script src="Padel.js"></script>
 </head>
 
-<body>
+<body onload="mostrarTorneos()">
     <header>
         <img src="Fotos/Logoweb.png" alt="Logo Web" id="logo">
         <h1>Torneos </h1>
@@ -18,24 +21,42 @@
 
 
         <nav>
-            <a href="index.html">
-                <img src="Fotos/logo casa.png" alt="Logo casa" id="Logo_casa">
-            </a>
-
-            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro">
+            <img src="Fotos/logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displaySubmenu()">
+            <div class="submenu">
+                <a href="index.html">
+                    <p> Home </p>
+                </a>
+                <a href="Equipo.html">
+                    <p>Equipo</p>
+                </a>
+                <a href="Merch.html">
+                    <p>Merch</p>
+                </a>
+            </div>
+            <nav>
+                <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayzona_fecha()"
+                    onclick="ocultarzona_fecha">
+                <div class="filtro_torneo">
+                    <p>Zona</p>
+                    <p>Fecha</p>
+                </div>
+                <div>
+                    <input type="date">
+                </div>
+            </nav>
         </nav>
         <div class="torneospics">
-            <img src="Fotos/Torneo-1.jpg" alt="Imagen torneo" class="pics" id="uno">
+            <!--img src="Fotos/Torneo-1.jpg" alt="Imagen torneo" class="pics">
 
-            <img src="Fotos/Torneo-2.jpg" alt="Imagen torneo" class="pics" id="dos">
+            <img src="Fotos/Torneo-2.jpg" alt="Imagen torneo" class="pics">
 
             <img src="Fotos/Torneo-3.png" alt="Imagen torneo" class="pics">
 
-            <img src="Fotos/Torneo-4.png" alt="Imagen torneo" class="pics" id="uno">
+            <img src="Fotos/Torneo-4.png" alt="Imagen torneo" class="pics">
 
             <img src="Fotos/Torneo-5.jpg" alt="Imagen torneo" class="pics">
 
-            <img src="Fotos/Torneo-6.png" alt="Imagen torneo" class="pics">
+            <img src="Fotos/Torneo-6.png" alt="Imagen torneo" class="pics"-->
         </div>
 
     </main>

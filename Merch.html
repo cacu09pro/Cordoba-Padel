@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title> Merch </title>
     <link href="padel.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Fotos/Logoweb.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial scale=1">
     <script src="Padel.js"></script>
 </head>
 
@@ -18,11 +20,28 @@
 
 
         <nav>
-            <a href="index.html">
-                <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa">
-            </a>
-            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro">
 
+            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displayMenu('.submenu')">
+            <div class="submenu">
+                <a href="index.html">
+                    <p> Home </p>
+                </a>
+                <a href="Torneos.html">
+                    <p>Torneos</p>
+                </a>
+                <a href="Equipo.html">
+                    <p>Equipo</p>
+                </a>
+            </div>
+        </nav>
+        <nav>
+            <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro"
+                onmouseover="displayMenu('.filtro_ropa')">
+            <div class="filtro_ropa">
+                <p>Adidas</p>
+
+                <p>Nike</p>
+            </div>
         </nav>
         <div class="superior">
             <img src="Fotos/merch1.png" alt="Remera de padel negra ">

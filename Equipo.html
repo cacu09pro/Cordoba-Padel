@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title> Equipo </title>
     <link href="padel.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Fotos/Logoweb.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <script src="Padel.js"></script>
 </head>
 
 <body>
@@ -17,26 +20,51 @@
 
 
         <nav>
-            <a href="index.html">
-                <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa">
-            </a>
-            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro">
 
+            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displayMenu('.submenu')"
+                onclick="recargarPagina('Equipo.html')">
+            <div class="submenu">
+                <a href="index.html">
+                    <p> Home </p>
+                </a>
+                <a href="Torneos.html">
+                    <p>Torneos</p>
+                </a>
+                <a href="Merch.html">
+                    <p>Merch</p>
+                </a>
+            </div>
+
+        </nav>
+        <nav>
+            <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayMenu('.equipo')"
+                onclick="recargarPagina('Equipo.html')">
+            <div class="equipo">
+                <p id="pelotas" onclick="filtrarequipo(this.id)">Pelotas</p>
+                <p id="palas" onclick="filtrarequipo(this.id)">Paletas</p>
+            </div>
+            <div class="marca">
+                <p id="nox" onclick="filtrarmarca(this.id)">Nox</p>
+                <p id="adidas" onclick="filtrarmarca(this.id)">Adidas</p>
+                <p id="wilson" onclick="filtrarmarca(this.id)">Wilson</p>
+            </div>
         </nav>
         <div class="palas">
             <div>
-                <img src="Fotos/Pala1.png" alt="Imagen paleta de padel">
-                <img src="Fotos/Pala2.png" alt="Imagen paleta de padel">
-                <img src="Fotos/Pala3.png" alt="Imagen paleta de padel">
-                <img src="Fotos/Pala4.png" alt="Imagen paleta de padel">
+                <img src="Fotos/Pala1.png" alt="Imagen paleta de padel" class="wilson">
+                <img src="Fotos/Pala2.png" alt="Imagen paleta de padel" class="nox">
+                <img src="Fotos/Pala3.png" alt="Imagen paleta de padel" class="nox">
+                <img src="Fotos/Pala4.png" alt="Imagen paleta de padel" class="adidas">
             </div>
-            <div class="pelotas">
-                <div>
-                    <img src="Fotos/Palotas1.png" alt="Imagen pelotas de padel">
-                    <img src="Fotos/Pelotas2.png" alt="Imagen pelotas de padel">
-                    <img src="Fotos/Pelotas3.png" alt="Imagen pelotas de padel">
-                    <img src="Fotos/Pelotas4.png" alt="Imagen pelotas de padel">
-                </div>
+        </div>
+        <div class="pelotas">
+            <div>
+                <img src="Fotos/Palotas1.png" alt="Imagen pelotas de padel" class="pool padel">
+                <img src="Fotos/Pelotas2.png" alt="Imagen pelotas de padel" class="">
+                <img src="Fotos/Pelotas3.png" alt="Imagen pelotas de padel" class="wilson">
+                <img src="Fotos/Pelotas4.png" alt="Imagen pelotas de padel">
+            </div>
+        </div>
 
     </main>
 
