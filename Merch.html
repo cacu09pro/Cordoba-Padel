@@ -6,25 +6,22 @@
     <title> Merch </title>
     <link href="padel.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="Fotos/Logoweb.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="Padel.js"></script>
 </head>
 
 <body>
     <header>
         <img src="Fotos/Logoweb.png" alt="Logo Web" id="logo">
-        <h1>Merch </h1>
-
+        <h1>Merch</h1>
     </header>
+
     <main>
-
-
         <nav>
-
             <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displayMenu('.submenu')">
             <div class="submenu">
                 <a href="index.html">
-                    <p> Home </p>
+                    <p>Home</p>
                 </a>
                 <a href="Torneos.html">
                     <p>Torneos</p>
@@ -34,48 +31,51 @@
                 </a>
             </div>
         </nav>
-        <nav>
-            <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro"
-                onmouseover="displayMenu('.filtro_ropa')">
-            <div class="filtro_ropa">
-                <p>Adidas</p>
 
-                <p>Nike</p>
+        <nav>
+            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayMenu('.filtro_ropa')">
+            <div class="filtro_ropa">
+                <p id="remera" onclick="filtro_merch('remera')">Remeras</p>
+                <p id="pantalon" onclick="filtro_merch('pantalon')">Pantalon</p>
+                <p id="zapa" onclick="filtro_merch('zapa')">Zapas</p>
+                <p id="buzo" onclick="filtro_merch('buzo')">Buzos</p>
+                <p id="gorra" onclick="filtro_merch('gorra')">Gorras</p>
             </div>
         </nav>
+
         <div class="superior">
-            <img src="Fotos/merch1.png" alt="Remera de padel negra ">
-            <img src="Fotos/merch2.png" alt="Remera de padel naranja degradado">
-            <img src="Fotos/merch6.png" alt="Buzo negro logo de padel">
-            <img src="Fotos/merch7.png" alt="Buzo negro logo de padel">
+            <img src="Fotos/merch1.png" alt="Remera de padel negra" class="remera">
+            <img src="Fotos/merch2.png" alt="Remera de padel naranja degradado" class="remera">
+            <img src="Fotos/merch6.png" alt="Buzo negro logo de padel" class="buzo">
+            <img src="Fotos/merch7.png" alt="Buzo negro logo de padel" class="buzo">
         </div>
+
         <div class="media">
-            <img src="Fotos/merch11.png" alt="Pantalon corto amarillo fluor ">
-            <img src="Fotos/merch4.png" alt="Pantalon largo negro">
-            <img src="Fotos/merch3.png" alt="Pantalon corto negro">
-            <img src="Fotos/merch12.png" alt="Pantalon largo azul" id="lonpa">
+            <img src="Fotos/merch11.png" alt="Pantalon corto amarillo fluor" class="pantalon">
+            <img src="Fotos/merch4.png" alt="Pantalon largo negro" class="pantalon">
+            <img src="Fotos/merch3.png" alt="Pantalon corto negro" class="pantalon">
+            <img src="Fotos/merch12.png" alt="Pantalon largo azul" class="pantalon" id="lonpa">
         </div>
+
         <div class="inferior">
-            <img src="Fotos/merch5.png" alt="Zapatillas azules" id="zapa">
-            <img src="Fotos/merch10.png" alt="Zapatillas negras y rojas" id="zapa2">
-            <img src="Fotos/merch9.png" alt="Zapatillas blancas" id="zapa">
-            <img src="Fotos/merch8.png" alt="Zapatillas grises" id="zapa">
-
+            <img src="Fotos/merch5.png" alt="Zapatillas azules" class="zapa" id="zapa1">
+            <img src="Fotos/merch10.png" alt="Zapatillas negras y rojas" class="zapa" id="zapa2">
+            <img src="Fotos/merch9.png" alt="Zapatillas blancas" class="zapa" id="zapa3">
+            <img src="Fotos/merch8.png" alt="Zapatillas grises" class="zapa" id="zapa4">
         </div>
+
+        <footer>
+            <a href="https://w.app/jYEZkd">
+                <img src="Fotos/Logo whats.png" alt="Logo whatsapp" id="whats">
+            </a>
+            <a href="https://www.instagram.com/camilocattaneo_/">
+                <img src="Fotos/Logo Insta.webp" alt="Logo Instagram" id="insta">
+            </a>
+            <a href="mailto:gonrognonix11@gmail.com?subject=Consultas%20e%20informacion&body=Consulta%3A">
+                <img src="Fotos/Logo mail.png" alt="Logo Mail" id="mail">
+            </a>
+        </footer>
     </main>
-
-    <footer>
-        <a href="https://w.app/jYEZkd">
-            <img src="Fotos/Logo whats.png" alt="Logo whatsapp" id="whats">
-        </a>
-        <a href="https://www.instagram.com/camilocattaneo_/">
-            <img src="Fotos/Logo Insta.webp" alt="Logo Instagram" id="insta">
-        </a><a href="mailto:gonrognonix11@gmail.com?subject=Consultas%20e%20informacion&body=Consulta%3A">
-            <img src="Fotos/Logo mail.png" alt="Logo Mail" id="mail">
-        </a>
-    </footer>
-
-
 </body>
 
 </html>

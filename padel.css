@@ -72,7 +72,9 @@ header {
 
 }
 
-.superior {
+.superior,
+.media,
+.inferior {
     text-align: center;
 }
 
@@ -84,11 +86,9 @@ header {
     width: 7.5%;
 }
 
-.inferior {
-    text-align: center;
-}
-
-#zapa {
+#zapa1,
+#zapa3,
+#zapa4 {
     width: 12.5%;
 }
 
