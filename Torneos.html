@@ -21,7 +21,7 @@
 
 
         <nav>
-            <img src="Fotos/logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displaySubmenu()" onclick="hide_home">
+            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onclick="displayMenu('.submenu')">
             <div class="submenu">
                 <a href="index.html">
                     <p> Home </p>
@@ -34,14 +34,24 @@
                 </a>
             </div>
             <nav>
-                <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayzona_fecha()"
-                    onclick="ocultarzona_fecha">
+                <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro"
+                    onclick="displayMenu(`.filtro_torneo`)">
                 <div class="filtro_torneo">
-                    <p>Zona</p>
-                    <p>Fecha</p>
-                </div>
-                <div>
-                    <input type="date">
+                    <label for="zona">Zona</label>
+                    <select id="zona" onchange="filtrar_zona(this.value)">
+                        <option value="Todas">
+                            Todas
+                        </option>
+                        <option value="Norte">
+                            Norte
+                        </option>
+                        <option value="Centro">
+                            Centro
+                        </option>
+                        <option value="Sur">
+                            Sur
+                        </option>
+                    </select>
                 </div>
             </nav>
         </nav>

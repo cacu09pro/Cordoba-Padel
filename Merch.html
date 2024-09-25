@@ -18,7 +18,7 @@
 
     <main>
         <nav>
-            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displayMenu('.submenu')">
+            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onclick="displayMenu('.submenu')">
             <div class="submenu">
                 <a href="index.html">
                     <p>Home</p>
@@ -33,13 +33,13 @@
         </nav>
 
         <nav>
-            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayMenu('.filtro_ropa')">
+            <img src="Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onclick="displayMenu('.filtro_ropa')">
             <div class="filtro_ropa">
-                <p id="remera" onclick="filtro_merch('remera')">Remeras</p>
-                <p id="pantalon" onclick="filtro_merch('pantalon')">Pantalon</p>
-                <p id="zapa" onclick="filtro_merch('zapa')">Zapas</p>
-                <p id="buzo" onclick="filtro_merch('buzo')">Buzos</p>
-                <p id="gorra" onclick="filtro_merch('gorra')">Gorras</p>
+                <p id="remera" onclick="filtro_merch(this.id)">Remeras</p>
+                <p id="pantalon" onclick="filtro_merch(this.id)">Pantalon</p>
+                <p id="zapa" onclick="filtro_merch(this.id)">Zapas</p>
+                <p id="buzo" onclick="filtro_merch(this.id)">Buzos</p>
+                <p id="gorra" onclick="filtro_merch(this.id)">Gorras</p>
             </div>
         </nav>
 
@@ -54,14 +54,14 @@
             <img src="Fotos/merch11.png" alt="Pantalon corto amarillo fluor" class="pantalon">
             <img src="Fotos/merch4.png" alt="Pantalon largo negro" class="pantalon">
             <img src="Fotos/merch3.png" alt="Pantalon corto negro" class="pantalon">
-            <img src="Fotos/merch12.png" alt="Pantalon largo azul" class="pantalon" id="lonpa">
+            <img src="Fotos/merch12.png" alt="Pantalon largo azul" class="pantalon">
         </div>
 
         <div class="inferior">
-            <img src="Fotos/merch5.png" alt="Zapatillas azules" class="zapa" id="zapa1">
-            <img src="Fotos/merch10.png" alt="Zapatillas negras y rojas" class="zapa" id="zapa2">
-            <img src="Fotos/merch9.png" alt="Zapatillas blancas" class="zapa" id="zapa3">
-            <img src="Fotos/merch8.png" alt="Zapatillas grises" class="zapa" id="zapa4">
+            <img src="Fotos/merch5.png" alt="Zapatillas azules" class="zapa">
+            <img src="Fotos/merch10.png" alt="Zapatillas negras y rojas" class="zapa">
+            <img src="Fotos/merch9.png" alt="Zapatillas blancas" class="zapa">
+            <img src="Fotos/merch8.png" alt="Zapatillas grises" class="zapa">
         </div>
 
         <footer>

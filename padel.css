@@ -56,7 +56,7 @@ body {
 .pics {
     width: 70%;
     text-align: center;
-
+    margin: 20px;
 }
 
 header {
@@ -76,24 +76,16 @@ header {
 .media,
 .inferior {
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px;
+    padding: 20px;
 }
 
-.media {
-    text-align: center;
-}
-
-#lonpa {
-    width: 7.5%;
-}
-
-#zapa1,
-#zapa3,
-#zapa4 {
-    width: 12.5%;
-}
-
-#zapa2 {
-    width: 15%;
+.superior img,
+.media img,
+.inferior img {
+    background-color: bisque;
 }
 
 .pelotas {
@@ -164,7 +156,8 @@ footer {
 .marca,
 .equipo,
 .filtro_torneo,
-.filtro_ropa {
+.filtro_ropa,
+.zona2 {
     background-color: rgb(217, 217, 217);
     width: 8%;
     padding: 5px;
@@ -176,7 +169,8 @@ footer {
 .marca p:hover,
 .equipo p:hover,
 .filtro_torneo p:hover,
-.filtro_ropa p:hover {
+.filtro_ropa p:hover,
+.zona2 p:hover {
     background-color: rgb(173, 173, 173);
 }
 
@@ -184,7 +178,8 @@ footer {
 .marca p,
 .equipo p,
 .filtro_torneo p,
-.filtro_ropa p {
+.filtro_ropa p,
+.zona2 p {
     border: 2px solid black;
     margin: 5px;
     padding: 5px;

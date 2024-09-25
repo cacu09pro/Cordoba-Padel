@@ -21,8 +21,7 @@
 
         <nav>
 
-            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onmouseover="displayMenu('.submenu')"
-                onclick="recargarPagina('Equipo.html')">
+            <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onclick="displayMenu('.submenu')">
             <div class="submenu">
                 <a href="index.html">
                     <p> Home </p>
@@ -40,9 +39,11 @@
             <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro" onmouseover="displayMenu('.equipo')"
                 onclick="recargarPagina('Equipo.html')">
             <div class="equipo">
-                <p id="pelotas" onclick="filtrarequipo(this.id)">Pelotas</p>
-                <p id="palas" onclick="filtrarequipo(this.id)">Paletas</p>
+                <p id="pelotas" onclick="filtrarequipo(this.id);displayMenu('.marca')">Pelotas</p>
+                <p id="palas" onclick="filtrarequipo(this.id);displayMenu('.marca')">Paletas</p>
+
             </div>
+
             <div class="marca">
                 <p id="nox" onclick="filtrarmarca(this.id)">Nox</p>
                 <p id="adidas" onclick="filtrarmarca(this.id)">Adidas</p>
@@ -59,10 +60,10 @@
         </div>
         <div class="pelotas">
             <div>
-                <img src="Fotos/Palotas1.png" alt="Imagen pelotas de padel" class="pool padel">
-                <img src="Fotos/Pelotas2.png" alt="Imagen pelotas de padel" class="">
+                <img src="Fotos/Palotas1.png" alt="Imagen pelotas de padel" class="nox">
+                <img src="Fotos/Pelotas2.png" alt="Imagen pelotas de padel" class="adidas">
                 <img src="Fotos/Pelotas3.png" alt="Imagen pelotas de padel" class="wilson">
-                <img src="Fotos/Pelotas4.png" alt="Imagen pelotas de padel">
+                <img src="Fotos/Pelotas4.png" alt="Imagen pelotas de padel" class="adidas">
             </div>
         </div>
 
