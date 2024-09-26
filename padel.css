@@ -90,10 +90,12 @@ header {
 
 .pelotas {
     text-align: center;
+
 }
 
 .palas {
     text-align: center;
+
 }
 
 footer {
@@ -187,4 +189,14 @@ footer {
 
 .submenu a {
     text-decoration: none;
+}
+
+.menucompra {
+    h3 {
+        text-align: center;
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 2em;
+
+    }
 }

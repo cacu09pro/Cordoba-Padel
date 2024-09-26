@@ -36,6 +36,8 @@ const torneos = [
         "zona": "Centro",
     }
 ]
+
+
 //MERCH//
 function filtro_merch(tipomerch) {
     document.querySelectorAll(".remera, .pantalon, .buzo, .zapa, .gorra").forEach((element) => {
@@ -81,14 +83,35 @@ function filtrarequipo(tipoEquipo) {
 
 
 }
+function displaycomprar(nombre, imagen, precio) {
+    console.log(precio)
+    document.querySelector("dialog").style.display = "block";
+    document.querySelector("#imagenprod").innerHTML = `<img src="${imagen}" class= "menucompra">`
+    document.querySelector("#nombre").innerText = nombre;
+    document.querySelector("#precio").innerText = precio;
+}
+function cerrardialog() {
+    document.querySelector("dialog").style.display = "none";
+}
+function comprar() {
+    alert("La compra se ha realizado con éxito")
+}
 //TORNEO//
 function mostrarTorneos(listaTorneos = torneos) {
     let torneosHTML = "";
     listaTorneos.forEach((torneo) => {
-        torneosHTML += `<img src="${torneo.imagen}" alt="Imagen torneo" class="pics">`
+        torneosHTML += `<img src="${torneo.imagen}" alt="Imagen torneo" class="pics" onclick="dialogtorneo(torneos)">`
     })
     document.querySelector(".torneospics").innerHTML = torneosHTML;
 }
+
+function dialogtorneo(torneo) {
+    console.log(torneo)
+    document.querySelector("dialog").style.display = "block";
+    document.querySelector("#fechaIn").innerText = torneo.fechaInicio;
+    document.querySelector("#fechafin").innerText = torneo.fechaFin;
+}
+
 
 let display = 0;
 

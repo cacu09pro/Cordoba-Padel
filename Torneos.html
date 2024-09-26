@@ -18,7 +18,17 @@
 
     </header>
     <main>
-
+        <dialog class="menucompra">
+            <h3>
+                MENÚ
+            </h3>
+            <p id="nombre"></p>
+            <p>
+                Fecha: Desde <span id="fechaIn"></span> Hasta <span id="Fechafin"></span>
+            </p>
+            <button type="button" onclick="cerrardialog()">Cerrar</button>
+            <button type="button" onclick="Inscribir()">Inscribirse</button>
+        </dialog>
 
         <nav>
             <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onclick="displayMenu('.submenu')">
@@ -37,7 +47,7 @@
                 <img src=" Fotos/Logo filtro.png" alt="Logo filtro" id="Logo_filtro"
                     onclick="displayMenu(`.filtro_torneo`)">
                 <div class="filtro_torneo">
-                    <label for="zona">Zona</label>
+                    <label for="zona">Zona:</label>
                     <select id="zona" onchange="filtrar_zona(this.value)">
                         <option value="Todas">
                             Todas
