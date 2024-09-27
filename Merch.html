@@ -17,14 +17,14 @@
     </header>
 
     <main>
-        <dialog class="menucompra"></dialog>
-        <h3>
-            MENÚ
-        </h3>
-        <div id="imagenprod"></div>
-        <div id="preico">Precio:</div>
-        <button type="button" onclick="cerrardialog()">Cerrar</button>
-        <button type="button" onclick="comprar()">Comprar</button>
+        <dialog class="menucompra">
+            <h3>
+                ITEM
+            </h3>
+            <div id="imagenprod"></div>
+            <p>Precio:<span id="precios"></span></p>
+            <button type="button" onclick="cerrardialog()">Cerrar</button>
+            <button type="button" onclick="compra()">Comprar</button>
         </dialog>
         <nav>
             <img src="Fotos/Logo casa.png" alt="Logo casa" id="Logo_casa" onclick="displayMenu('.submenu')">
@@ -53,44 +53,49 @@
         </nav>
 
         <div class="superior">
-            <img name="remera1" src="Fotos/merch1.png" alt="Remera de padel negra" class="remera"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="remera1" src="Fotos/merch1.png" alt="$60.000" class="remera" precios="$60.000"
+                onclick="displaycompra(this.name,this.src,this.alt)">
 
             <img name="remera2" src="Fotos/merch2.png" alt="Remera de padel naranja degradado" class="remera"
-                onclick="displaycomprar(this.name,this.src)">
+                id="$63.000" onclick="displaycompra(this.src,this.id)">
 
-            <img name="buzo1" src="Fotos/merch6.png" alt="Buzo negro logo de padel" class="buzo"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="buzo1" src="Fotos/merch6.png" alt="Buzo negro logo de padel" class="buzo" id="$70.000"
+                onclick="displaycompra(this.src,this.id)">
 
-            <img name="buzo2" src="Fotos/merch7.png" alt="Buzo negro logo de padel" class="buzo"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="buzo2" src="Fotos/merch7.png" alt="Buzo negro logo de padel" class="buzo" id="$75.000"
+                onclick="displaycompra(this.src,this.id)">
 
         </div>
 
         <div class="media">
             <img name="pantalon1" src="Fotos/merch11.png" alt="Pantalon corto amarillo fluor" class="pantalon"
-                onclick="displaycomprar(this.name,this.src, this.id)">
+                id="$45.000" onclick="displaycompra(this.name,this.src, this.id)">
 
-            <img name="pantalon2" src="Fotos/merch4.png" alt="Pantalon largo negro" class="pantalon"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="pantalon2" src="Fotos/merch4.png" alt="Pantalon largo negro" class="pantalon" id="$55.000"
+                onclick="displaycompra(this.src,this.id)">
 
-            <img name="pantalon3" src="Fotos/merch3.png" alt="Pantalon corto negro" class="pantalon"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="pantalon3" src="Fotos/merch3.png" alt="Pantalon corto negro" class="pantalon" id="$35.000"
+                onclick="displaycompra(this.src,this.id)">
 
-            <img name="pantalon4" src="Fotos/merch12.png" alt="Pantalon largo azul" class="pantalon"
-                onclick="displaycomprar(this.name,this.src)">
+            <img name="pantalon4" src="Fotos/merch12.png" alt="Pantalon largo azul" class="pantalon" id="$33.000"
+                onclick="displaycompra(this.src,this.id)">
 
         </div>
 
         <div class="inferior">
-            <img name="zapa1" src="Fotos/merch5.png" alt="Zapatillas azules" class="zapa">
-            <img name="zapa2" src="Fotos/merch10.png" alt="Zapatillas negras y rojas" class="zapa">
-            <img name="zapa3" src="Fotos/merch9.png" alt="Zapatillas blancas" class="zapa">
-            <img name="zapa4" src="Fotos/merch8.png" alt="Zapatillas grises" class="zapa">
+            <img name="zapa1" src="Fotos/merch5.png" alt="Zapatillas azules" class="zapa" id="$100.000"
+                onclick="displaycompra(this.src,this.id)">
+            <img name="zapa2" src="Fotos/merch10.png" alt="Zapatillas negras y rojas" class="zapa" id="$95.000"
+                onclick="displaycompra(this.src,this.id)">
+
+            <img name="zapa3" src="Fotos/merch9.png" alt="Zapatillas blancas" class="zapa" id="$87.000"
+                onclick="displaycompra(this.src,this.id)">
+            <img name="zapa4" src="Fotos/merch8.png" alt="Zapatillas grises" class="zapa" id="$99.000"
+                onclick="displaycompra(this.src,this.id)">
         </div>
 
         <footer>
-            <a href="https://w.app/jYEZkd">
+            <a href=" https://w.app/jYEZkd">
                 <img src="Fotos/Logo whats.png" alt="Logo whatsapp" id="whats">
             </a>
             <a href="https://www.instagram.com/camilocattaneo_/">
