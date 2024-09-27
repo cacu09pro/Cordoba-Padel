@@ -4,48 +4,48 @@ const torneos = [
         "fechaInicio": "2024-10-24",
         "fechaFin": "2024-10-26",
         "zona": "Norte",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     },
     {
         "imagen": "Fotos/Torneo-2.jpg",
         "fechaInicio": "04/11/2024",
         "fechaFin": "06/11/2024",
         "zona": "Sur",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     },
     {
         "imagen": "Fotos/Torneo-3.png",
         "fechaInicio": "14/10/2024",
         "fechaFin": "16/10/2024",
         "zona": "Centro",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     },
     {
         "imagen": "Fotos/Torneo-4.png",
         "fechaInicio": "04/10/2024",
         "fechaFin": "06/10/2024",
         "zona": "Sur",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     },
     {
         "imagen": "Fotos/Torneo-5.jpg",
         "fechaInicio": "20/10/2024",
         "fechaFin": "22/10/2024",
         "zona": "Norte",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     },
     {
         "imagen": "Fotos/Torneo-6.png",
         "fechaInicio": "11/11/2024",
         "fechaFin": "13/11/2024",
         "zona": "Centro",
-        "premio": "$10.000",
-        "precio": "$100"
+        "premio": "$100.000",
+        "precio": "$10.000"
     }
 ]
 
