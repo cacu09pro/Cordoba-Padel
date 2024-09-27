@@ -200,3 +200,7 @@ footer {
 
     }
 }
+
+#cartelTorneo img {
+    max-width: 200px;
+}

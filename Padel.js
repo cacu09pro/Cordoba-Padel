@@ -121,23 +121,26 @@ function comprar() {
 //TORNEO//
 function mostrarTorneos(listaTorneos = torneos) {
     let torneosHTML = "";
-    listaTorneos.forEach((torneo) => {
+    listaTorneos.forEach((torneo, index) => {
         console.log(torneo);
-        torneosHTML += `<img src="${torneo.imagen}" alt="Imagen torneo" class="pics" onclick="dialogtorneo(${torneo})">`;
+        torneosHTML += `<img src="${torneo.imagen}" alt="Imagen torneo" class="pics" onclick="dialogtorneo(${index})">`;
     })
     document.querySelector(".torneospics").innerHTML = torneosHTML;
 }
 
-function dialogtorneo(torneo) {
-    console.log(torneo);
+function dialogtorneo(indexTorneo) {
+    const torneo = torneos[indexTorneo];
     document.querySelector("dialog").style.display = "block";
+    document.getElementById("cartelTorneo").innerHTML = `<img src="${torneo.imagen}" alt="cartel del torneo">`
     document.querySelector("#fechaIn").innerText = torneo.fechaInicio;
-    document.querySelector("#fechafin").innerText = torneo.fechaFin;
+    document.querySelector("#Fechafin").innerText = torneo.fechaFin;
     document.querySelector("#precio").innerText = torneo.precio;
     document.querySelector("#premio").innerText = torneo.premio;
 }
 function Inscribir() {
+    cerrardialog();
     alert("La inscripción se ha realizado con éxito");
+
 }
 let display = 0;
 
